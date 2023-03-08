@@ -12,7 +12,7 @@ void draw()
 {
   noStroke();
     
-  background(255, 255, 255);
+  background(0, 0, 0);
   for(Square square : square_array)
   {
     square.move();
