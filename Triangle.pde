@@ -1,3 +1,4 @@
+
 class Triangle
 {
   Hitbox hitbox;
@@ -7,7 +8,6 @@ class Triangle
   
   PVector center = new PVector();
   PVector speed;
-  
   Triangle()
   {
     this(new PVector(random(500), random(500)), new PVector().random2D());
