@@ -1,3 +1,4 @@
+
 class Square
 {
   PVector[] vertices;
@@ -7,7 +8,8 @@ class Square
   float[] colour_weights = {1, 1, 1};
   int significant_colour;
   Hitbox hitbox;
-  
+  OscP5 oscClient = new OscP5(this, 11111);
+  NetAddress pureDataAddress = new  NetAddress("localhost", 11112);
   color clr;
   
   float side_length;
@@ -77,6 +79,7 @@ class Square
   {
     this.rotate();
     this.speed = this.hitbox.new_direction(this.speed);
+    
     for(PVector vertex : this.vertices)
     {
         vertex.x += this.speed.x*3;
