@@ -35,6 +35,7 @@ void draw()
 void mousePressed()
 {
    int random_figure = int(random(3));
+   //int random_figure = 1;
    if(random_figure == 0)
      square_array.add(new Square());
    
